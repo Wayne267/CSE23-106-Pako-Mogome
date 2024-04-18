@@ -79,6 +79,32 @@
         .cta-btn:hover {
             background-color: #333;
         }
+
+        /* Movie Grid Styles */
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .movie {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .movie img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .movie-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -100,6 +126,38 @@
         <h1>Welcome to WarnerBros</h1>
         <p>Explore our latest movies, TV shows, games, and apps. Join the adventure!</p>
         <a href="#" class="cta-btn">Get Started</a>
+
+        <h2>HOT RIGHT NOW!</h2>
+        <div class="movie-grid">
+            <div class="movie">
+                <img src="movie1.jpg" alt="Movie 1">
+                <p class="movie-title">Movie 1</p>
+            </div>
+            <div class="movie">
+                <img src="movie2.jpg" alt="Movie 2">
+                <p class="movie-title">Movie 2</p>
+            </div>
+            <div class="movie">
+                <img src="movie3.jpg" alt="Movie 3">
+                <p class="movie-title">Movie 3</p>
+            </div>
+            <div class="movie">
+                <img src="movie4.jpg" alt="Movie 4">
+                <p class="movie-title">Movie 4</p>
+            </div>
+            <div class="movie">
+                <img src="movie5.jpg" alt="Movie 5">
+                <p class="movie-title">Movie 5</p>
+            </div>
+            <div class="movie">
+                <img src="movie6.jpg" alt="Movie 6">
+                <p class="movie-title">Movie 6</p>
+            </div>
+            <div class="movie">
+                <img src="movie7.jpg" alt="Movie 7">
+                <p class="movie-title">Movie 7</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
