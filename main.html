@@ -49,9 +49,10 @@
         }
 
         .scroll-container {
-            overflow-x: auto;
+            overflow-x: hidden;
             white-space: nowrap;
             padding: 20px 0;
+            position: relative;
         }
 
         .scroll-container img {
@@ -59,6 +60,31 @@
             height: auto;
             border-radius: 5px;
             margin-right: 10px;
+        }
+
+        .scroll-buttons {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .scroll-left, .scroll-right {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .scroll-left {
+            left: 0;
+        }
+
+        .scroll-right {
+            right: 0;
         }
 
         .movie-grid {
@@ -108,11 +134,15 @@
     </header>
   
     <div class="scroll-container">
-        <img src="THTF.jpg" alt="Image 1">
-        <img src="Inter.jpg" alt="Image 2">
-        <img src="SawX.jpg" alt="Image 3">
-        <img src="Eight.jpg" alt="Image 4">
-        <img src="Inception.jpg" alt="Image 5">
+        <button class="scroll-left scroll-buttons">&#10094;</button>
+        <div class="images-wrapper">
+            <img src="THTF.jpg" alt="Image 1">
+            <img src="Inter.jpg" alt="Image 2">
+            <img src="SawX.jpg" alt="Image 3">
+            <img src="Eight.jpg" alt="Image 4">
+            <img src="Inception.jpg" alt="Image 5">
+        </div>
+        <button class="scroll-right scroll-buttons">&#10095;</button>
     </div>
 
     <h2>MOVIES TO LOOK OUT FOR</h2>
@@ -167,9 +197,30 @@
             <p class="movie-title">Midsommer</p>
         </div>
     </div>
-    <h3 style="text-align: center;">MUST WATCH!!!</h3>
 
     <!-- Add rest of your homepage content here -->
+
+    <script>
+        const scrollLeftButton = document.querySelector('.scroll-left');
+        const scrollRightButton = document.querySelector('.scroll-right');
+        const imagesWrapper = document.querySelector('.images-wrapper');
+
+        const scrollAmount = 150;
+
+        scrollLeftButton.addEventListener('click', () => {
+            imagesWrapper.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        scrollRightButton.addEventListener('click', () => {
+            imagesWrapper.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
 
