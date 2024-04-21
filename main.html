@@ -130,33 +130,35 @@
             padding: 20px;
             text-align: center;
             position: relative;
-            clear: both; /* Clear floats */
         }
 
-        .footer-links {
+        .footer-content {
             display: flex;
-            justify-content: center; /* Center the links horizontally */
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            flex-wrap: wrap; /* Allow wrapping */
-            margin-top: 20px;
-        }
-
-        .footer-links a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
+            gap: 20px;
         }
 
         .flower-petal {
             display: flex;
             justify-content: center;
-            margin-bottom: 20px;
+            gap: 20px;
         }
 
         .flower-logo {
             width: 100px; /* Adjust size as needed */
             height: auto;
-            margin: 0 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
         }
 
         /* CSS to show the figcaption on hover */
@@ -402,7 +404,9 @@
                 <span class="button-green-download2-big">View Details</span>
             </figcaption>
             </div>
-          <footer>
+         
+        <footer>
+        <div class="footer-content">      
         <div class="flower-petal">
             <img src="DC.png" alt="Company Logo 1" class="flower-logo">
             <img src="AT&T.png" alt="Company Logo 2" class="flower-logo">
@@ -418,6 +422,8 @@
             <a href="#">International</a>
             <a href="#">Help</a>
         </div>
+      </div>
+            <div style="background-color: #333; padding: 20px;"></div>
     </footer> 
     
     <script>
