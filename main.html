@@ -48,28 +48,28 @@
             font-size: 20px;
         }
 
-        .scroll-container {
+        .scroll-container, .scroll-container2 {
             overflow-x: hidden;
             white-space: nowrap;
             padding: 20px 0;
             position: relative;
         }
 
-        .scroll-container img {
+        .scroll-container img, .scroll-container img2 {
             width: 100%
             height: auto;
             border-radius: 5px;
             margin-right: 10px;
         }
 
-        .scroll-buttons {
+        .scroll-buttons, .scroll-buttons2 {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
             z-index: 1;
         }
 
-        .scroll-left, .scroll-right {
+        .scroll-left, .scroll-right, .scroll-left2, .scroll-right2 {
             background-color: rgba(0, 0, 0, 0.5);
             color: #fff;
             border: none;
@@ -79,11 +79,11 @@
             margin: 0 10px;
         }
 
-        .scroll-left {
+        .scroll-left, .scroll-left {
             left: 0;
         }
 
-        .scroll-right {
+        .scroll-right, .scroll-right2 {
             right: 0;
         }
 
@@ -200,17 +200,42 @@
     </div>
     
     <h3>MUST WATCH!!!</h3>
-    <button class="scroll-left scroll-buttons">&#10094;</button>
-        <div class="images-wrapper">
+
+     <div class="scroll-container2">
+        <button class="scroll-left2 scroll-buttons2">&#10094;</button>
+        <div class="images-wrapper2">
             <img src="THTF.jpg" alt="Image 1" width="300" height="280">
             <img src="Inter.jpg" alt="Image 2" width="300" height="280">
             <img src="SawX.jpg" alt="Image 3" width="300" height="280">
             <img src="Eight.jpg" alt="Image 4" width="300" height="280">
             <img src="Inception.jpg" alt="Image 5" width="300" height="280">
         </div>
-        <button class="scroll-right scroll-buttons">&#10095;</button>
+        <button class="scroll-right2 scroll-buttons2">&#10095;</button>
+    </div>
 
     <!-- Add rest of your homepage content here -->
+
+    <script>
+        const scrollLeftButton = document.querySelector('.scroll-left');
+        const scrollRightButton = document.querySelector('.scroll-right');
+        const imagesWrapper = document.querySelector('.images-wrapper');
+
+        const scrollAmount = 150;
+
+        scrollLeftButton.addEventListener('click', () => {
+            imagesWrapper.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        scrollRightButton.addEventListener('click', () => {
+            imagesWrapper.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 
     <script>
         const scrollLeftButton = document.querySelector('.scroll-left');
