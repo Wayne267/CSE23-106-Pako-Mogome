@@ -48,7 +48,19 @@
             font-size: 20px;
         }
 
-        /* Additional Styles */
+         .scroll-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 20px 0;
+        }
+
+        .scroll-container img {
+            display: inline-block;
+            width: 150px; 
+            height: auto;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
         .movie-grid {
             display: grid;
             grid-template-columns: repeat(6, 1fr); /* Six columns */
@@ -98,6 +110,16 @@
             </ul>
         </nav>
     </header>
+  
+    <div class="scroll-container">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
+        <img src="image5.jpg" alt="Image 5">
+    </div>
+
+      <h2 style="text-align: center;">MOVIES TO LOOK OUT FOR</h2>
     
     <div class="movie-grid">
         <div class="movie">
