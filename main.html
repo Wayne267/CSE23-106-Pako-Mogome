@@ -92,7 +92,7 @@
 
         .movie-grid {
             display: grid;
-            grid-template-columns: repeat(6, 1fr); /* Six columns */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatically fit columns */
             gap: 20px;
             margin: 20px;
         }
@@ -169,26 +169,25 @@
     <h2>MOVIES TO LOOK OUT FOR</h2>
     
     <div class="movie-grid">
-        <div class="movie movie-container">
-            <div class="movie">
-                <img src="Minions.jpg" alt="Minions">
-                <figcaption class="movie-caption">
-                    <span class="icon-star"></span>
-                    <h4 class="rating">6.2 / 10</h4>
-                    <h4>Action</h4>
-                    <h4>Adventure</h4>
-                    <span class="button-green-download2-big">View Details</span>
-                </figcaption>
-                <p class="movie-title">Minions</p>
-            </div>
-            <div class="movie">
-                <img src="Joker2.webp" alt="Joker 2">
-                <p class="movie-title">Joker 2</p>
-            </div>
-            <div class="movie">
-                <img src="SnowWhite.jpg" alt="Snow White">
-                <p class="movie-title">Snow White</p>
-            </div>
+        <div class="movie">
+            <img src="Minions.jpg" alt="Minions">
+            <figcaption class="movie-caption">
+                <span class="icon-star"></span>
+                <h4 class="rating">6.2 / 10</h4>
+                <h4>Action</h4>
+                <h4>Adventure</h4>
+                <span class="button-green-download2-big">View Details</span>
+            </figcaption>
+            <p class="movie-title">Minions</p>
+        </div>
+        <div class="movie">
+            <img src="Joker2.webp" alt="Joker 2">
+            <p class="movie-title">Joker 2</p>
+        </div>
+        <div class="movie">
+            <img src="SnowWhite.jpg" alt="Snow White">
+            <p class="movie-title">Snow White</p>
+        </div>
             <div class="movie">
                 <img src="The Nun.jpg" alt="The Nun">
                 <p class="movie-title">The Nun</p>
