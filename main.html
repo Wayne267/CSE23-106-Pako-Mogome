@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WarnerBros Homepage</title>
     <style>
-      /* Add your CSS styles here */
+        /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -48,21 +48,21 @@
             font-size: 20px;
         }
 
-        .scroll-container, .scroll-container2 {
+        .scroll-container {
             overflow-x: hidden;
             white-space: nowrap;
             padding: 20px 0;
             position: relative;
         }
 
-        .scroll-container img, .scroll-container2 img {
+        .scroll-container img {
             width: 100%;
             height: auto;
             border-radius: 5px;
             margin-right: 10px;
         }
 
-        .scroll-buttons, .scroll-buttons2 {
+        .scroll-buttons {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -79,21 +79,11 @@
             margin: 0 10px;
         }
 
-        .scroll-left2, .scroll-right2 {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 0 10px;
-        }
-
-        .scroll-left, .scroll-left2 {
+        .scroll-left {
             left: 0;
         }
 
-        .scroll-right, .scroll-right2 {
+        .scroll-right {
             right: 0;
         }
 
@@ -176,80 +166,68 @@
     <h2>MOVIES TO LOOK OUT FOR</h2>
     
     <div class="movie-grid">
-        <div class="movie">
-            <img src="Minions.jpg" alt="Minions">
-            <div class="movie-caption">
-                <span class="icon-star"></span>
-                <h4 class="rating">6.2 / 10</h4>
-                <h4>Action</h4>
-                <h4>Adventure</h4>
-                <span class="button-green-download2-big">View Details</span>
+        <div class="movie movie-container">
+            <div class="movie">
+                <img src="Minions.jpg" alt="Minions">
+                <figcaption class="movie-caption">
+                    <span class="icon-star"></span>
+                    <h4 class="rating">6.2 / 10</h4>
+                    <h4>Action</h4>
+                    <h4>Adventure</h4>
+                    <span class="button-green-download2-big">View Details</span>
+                </figcaption>
+                <p class="movie-title">Minions</p>
             </div>
-            <p class="movie-title">Minions</p>
-        </div>
-        <div class="movie">
-            <img src="Joker2.webp" alt="Joker 2">
-            <p class="movie-title">Joker 2</p>
-        </div>
-        <div class="movie">
-            <img src="SnowWhite.jpg" alt="Snow White">
-            <p class="movie-title">Snow White</p>
-        </div>
-        <div class="movie">
-            <img src="The Nun.jpg" alt="The Nun">
-            <p class="movie-title">The Nun</p>
-        </div>
-        <div class="movie">
-            <img src="MadMax.jpg" alt="Mad Max">
-            <p class="movie-title">Furiosa A MadMax Saga</p>
-        </div>
-        <div class="movie">
-            <img src="GOTG.jpg" alt="Guardians Of The Galaxy" width="250" height="200">
-            <p class="movie-title">Guardians Of The Galaxy</p>
-        </div>
-        <div class="movie">
-            <img src="1917.jpg" alt="1917">
-            <p class="movie-title">1917</p>
-        </div>
-        <div class="movie">
-            <img src="SpaceJam.jpg" alt="Space Jam 2023">
-            <p class="movie-title">Space Jam 2023</p>
-        </div>
-        <div class="movie">
-            <img src="BeeKeeper.jpg" alt="BeeKeeper">
-            <p class="movie-title">BeeKeeper</p>
-        </div>
-        <div class="movie">
-            <img src="donnie_darko_2.jpg" alt="Donnie Darko">
-            <p class="movie-title">Donnie Darko</p>
-        </div>
-        <div class="movie">
-            <img src="TopGun.jpg" alt="Top Gun">
-            <p class="movie-title">Top Gun</p>
-        </div>
-        <div class="movie">
-            <img src="Stopthe.jpg" alt="Midsommer">
-            <p class="movie-title">Stop The Wedding</p>
+            <div class="movie">
+                <img src="Joker2.webp" alt="Joker 2">
+                <p class="movie-title">Joker 2</p>
+            </div>
+            <div class="movie">
+                <img src="SnowWhite.jpg" alt="Snow White">
+                <p class="movie-title">Snow White</p>
+            </div>
+            <div class="movie">
+                <img src="The Nun.jpg" alt="The Nun">
+                <p class="movie-title">The Nun</p>
+            </div>
+            <div class="movie">
+                <img src="MadMax.jpg" alt="Mad Max">
+                <p class="movie-title">Furiosa A MadMax Saga</p>
+            </div>
+            <div class="movie">
+                <img src="GOTG.jpg" alt="Guardians Of The Galaxy" width="250" height="200">
+                <p class="movie-title">Guardians Of The Galaxy</p>
+            </div>
+            <div class="movie">
+                <img src="1917.jpg" alt="1917">
+                <p class="movie-title">1917</p>
+            </div>
+            <div class="movie">
+                <img src="SpaceJam.jpg" alt="Space Jam 2023">
+                <p class="movie-title">Space Jam 2023</p>
+            </div>
+            <div class="movie">
+                <img src="BeeKeeper.jpg" alt="BeeKeeper">
+                <p class="movie-title">BeeKeeper</p>
+            </div>
+            <div class="movie">
+                <img src="donnie_darko_2.jpg" alt="Donnie Darko">
+                <p class="movie-title">Donnie Darko</p>
+            </div>
+            <div class="movie">
+                <img src="TopGun.jpg" alt="Top Gun">
+                <p class="movie-title">Top Gun</p>
+            </div>
+            <div class="movie">
+                <img src="Stopthe.jpg" alt="Midsommer">
+                <p class="movie-title">Stop The Wedding</p>
+            </div>
         </div>
     </div>
     
     <h3>MUST WATCH!!!</h3>
 
-     <div class="scroll-container2">
-        <button class="scroll-left2 scroll-buttons2">&#10094;</button>
-        <div class="images-wrapper2">
-            <img src="THTF.jpg" alt="Image 1" width="300" height="280">
-            <img src="Inter.jpg" alt="Image 2" width="300" height="280">
-            <img src="SawX.jpg" alt="Image 3" width="300" height="280">
-            <img src="Eight.jpg" alt="Image 4" width="300" height="280">
-            <img src="Inception.jpg" alt="Image 5" width="300" height="280">
-        </div>
-        <button class="scroll-right2 scroll-buttons2">&#10095;</button>
-    </div>
-
-    <!-- Add rest of your homepage content here -->
-
-     <script>
+    <script>
         const scrollLeftButton = document.querySelector('.scroll-left');
         const scrollRightButton = document.querySelector('.scroll-right');
         const imagesWrapper = document.querySelector('.images-wrapper');
@@ -270,29 +248,8 @@
             });
         });
     </script>
-
-    <script>
-        const scrollLeftButton2 = document.querySelector('.scroll-left2');
-        const scrollRightButton2 = document.querySelector('.scroll-right2');
-        const imagesWrapper2 = document.querySelector('.images-wrapper2');
-
-        const scrollAmount2 = 150;
-
-        scrollLeftButton2.addEventListener('click', () => {
-            imagesWrapper2.scrollBy({
-                left: -scrollAmount2,
-                behavior: 'smooth'
-            });
-        });
-
-        scrollRightButton2.addEventListener('click', () => {
-            imagesWrapper2.scrollBy({
-                left: scrollAmount2,
-                behavior: 'smooth'
-            });
-        });
-    </script>
 </body>
 </html>
+
 
 
