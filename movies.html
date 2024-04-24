@@ -187,18 +187,6 @@
             </ul>
         </nav>
     </header>
-  
-    <div class="scroll-container">
-        <button class="scroll-left scroll-buttons">&#10094;</button>
-        <div class="images-wrapper">
-            <img src="THTF.jpg" alt="Image 1" width="300" height="280">
-            <img src="Inter.jpg" alt="Image 2" width="300" height="280">
-            <img src="SawX.jpg" alt="Image 3" width="300" height="280">
-            <img src="Eight.jpg" alt="Image 4" width="300" height="280">
-            <img src="Inception.jpg" alt="Image 5" width="300" height="280">
-        </div>
-        <button class="scroll-right scroll-buttons">&#10095;</button>
-    </div>
 
     <h2>MOVIES TO LOOK OUT FOR</h2>
     
@@ -405,29 +393,6 @@
             </figcaption>
             </div>
          
-        
-    
-    <script>
-        const scrollLeftButton = document.querySelector('.scroll-left');
-        const scrollRightButton = document.querySelector('.scroll-right');
-        const imagesWrapper = document.querySelector('.images-wrapper');
-
-        const scrollAmount = 150;
-
-        scrollLeftButton.addEventListener('click', () => {
-            imagesWrapper.scrollBy({
-                left: -scrollAmount,
-                behavior: 'smooth'
-            });
-        });
-
-        scrollRightButton.addEventListener('click', () => {
-            imagesWrapper.scrollBy({
-                left: scrollAmount,
-                behavior: 'smooth'
-            });
-        });
-    </script>
          <footer id="contentinfo" class="body">
             <div class="container">
                 <div class="row clearfix">
