@@ -150,25 +150,25 @@ footer {
     background-color: #000;
     color: #fff;
     padding: 40px 0;
+    width: 100%; /* Ensure the footer spans the entire width of the screen */
 }
 
 .container {
-    max-height: auto;
-    max-width: 1200px;
+    max-width: 1200px; /* Limit the maximum width of the content within the footer */
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -20px;
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
 }
 
 .column {
-    flex: 1;
+    flex: 1; /* Allow columns to grow and fill available space equally */
     padding: 0 20px;
 }
+
 
 .nav-bottom, .secondary-links {
     list-style: none;
