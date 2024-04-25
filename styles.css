@@ -1,3 +1,9 @@
+
+.left-side-text {
+    font-size: 34px; /* Increase font size */
+    border-right: 5px solid green; /* Add green border on the right */
+    padding-right: 20px; /* Add some padding to separate the text from the border */
+}
 /* Font styles */
 @font-face {
     font-family: 'Hammersmith One';
