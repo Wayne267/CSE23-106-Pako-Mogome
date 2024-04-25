@@ -1,7 +1,14 @@
+/* Font styles */
+@font-face {
+    font-family: 'Hammersmith One';
+    src: url('HammersmithOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
         /* General styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Hammersmith One', Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f2f2f2;
@@ -42,7 +49,7 @@
             color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Arial', sans-serif; /* Add font family */
+    font-family: 'Hammersmith One', Arial, sans-serif; /* Add font family */
         }
 
         nav ul li a:hover {
