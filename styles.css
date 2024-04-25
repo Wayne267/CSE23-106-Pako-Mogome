@@ -227,7 +227,7 @@ footer {
 .description-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff; /* Button background color */
+    background-color: #4caf50; /* Green button background color */
     color: #fff; /* Button text color */
     text-decoration: none;
     border-radius: 5px;
@@ -235,5 +235,5 @@ footer {
 }
 
 .description-link:hover {
-    background-color: #0056b3; /* Button background color on hover */
+    background-color: #388e3c; /* Green button background color on hover */
 }
