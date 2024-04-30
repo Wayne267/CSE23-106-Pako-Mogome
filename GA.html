@@ -128,6 +128,23 @@
         .footer-links a:hover {
             color: #ccc;
         }
+
+        /* CSS styles for movie container and images */
+.movie {
+    width: 100%; /* Set width of movie container */
+    height: auto; /* Allow container height to adjust based on content */
+    border: 1px solid #ddd; /* Optional border for movie container */
+    padding: 10px; /* Optional padding for spacing */
+}
+
+.movie img {
+    max-width: 100%; /* Limit image width to 100% of container width */
+    max-height: 100%; /* Limit image height to 100% of container height */
+    display: block; /* Ensures images behave like block elements */
+    margin: auto; /* Center images horizontally within the container */
+    object-fit: cover; /* Scale the image to cover the entire container */
+}
+
     </style>
 </head>
 <body>
