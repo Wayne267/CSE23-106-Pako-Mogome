@@ -5,19 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WarnerBros | Games and Apps</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
-    function showContent(contentType) {
-    // Hide all content sections
-    var contents = document.getElementsByClassName('content');
-    for (var i = 0; i < contents.length; i++) {
-        contents[i].style.display = 'none';
-    }
-
-    // Show the selected content section
-    var selectedContent = document.getElementById(contentType);
-    if (selectedContent) {
-        selectedContent.style.display = 'block';
-    }
-}
 
 </head>
 <body>
@@ -86,6 +73,18 @@
     </footer>
 
     <!-- JavaScript for toggling content -->
-    <script src="scripts.js"></script> <!-- Link your JavaScript file here -->
+    function showContent(contentType) {
+    // Hide all content sections
+    var contents = document.getElementsByClassName('content');
+    for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = 'none';
+    }
+
+    // Show the selected content section
+    var selectedContent = document.getElementById(contentType);
+    if (selectedContent) {
+        selectedContent.style.display = 'block';
+    }
+}
 </body>
 </html>
