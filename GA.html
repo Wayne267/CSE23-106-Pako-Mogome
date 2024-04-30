@@ -102,16 +102,16 @@
         }
 
         /* Footer styles */
-        footer {
-            background-color: #000;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-        }
+       footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    clear: both; /* Clear floats to ensure proper placement */
+    position: relative; /* Set position back to relative */
+}
+
 
         .footer-links {
             display: flex;
