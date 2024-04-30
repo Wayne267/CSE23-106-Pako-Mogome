@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarnerBros | Games and Apps</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
+    <style>
+        /* Custom styles for the Games and Apps page */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-right: 5px solid green; /* Green border on the right */
+        }
+
+        .logo img {
+            max-height: 50px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Hammersmith One', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content {
+            display: none; /* Hide content by default */
+        }
+
+        .active {
+            text-decoration: underline; /* Underline active button */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            cursor: pointer;
+            padding: 10px 20px;
+            margin-right: 20px;
+            border: none;
+            background-color: #ccc;
+            color: #000;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #bbb;
+        }
+    </style>
+    <script>
+        // JavaScript to handle button click and toggle content
+        function showContent(contentType) {
+            // Hide all content elements
+            const contentElements = document.querySelectorAll('.content');
+            contentElements.forEach(element => {
+                element.style.display = 'none';
+            });
+
+            // Show selected content
+            document.getElementById(contentType).style.display = 'block';
+
+            // Update button styles
+            const buttons = document.querySelectorAll('.button');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Highlight the active button
+            document.getElementById(contentType + '-button').classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="warnerbros_logo.png" alt="WarnerBros Logo">
+        </div>
+        <div class="button-container">
+            <!-- Button to show Games content -->
+            <button class="button active" id="games-button" onclick="showContent('games')">Games</button>
+            <!-- Button to show Apps content -->
+            <button class="button" id="apps-button" onclick="showContent('apps')">Apps</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Explore Our Games and Apps</h1>
+
+        <!-- Games Content -->
+        <div class="content" id="games">
+            <h2>Featured Games</h2>
+            <p>Discover the latest and greatest games from WarnerBros.</p>
+            <!-- Add game-related content here -->
+        </div>
+
+        <!-- Apps Content -->
+        <div class="content" id="apps" style="display: none;">
+            <h2>Featured Apps</h2>
+            <p>Explore useful apps developed by WarnerBros.</p>
+            <!-- Add app-related content here -->
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <a href="/about/">About Us</a>
+            <a href="/contact/">Contact Us</a>
+            <a href="/terms/">Terms of Service</a>
+            <a href="/privacy/">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <!-- Script to highlight active button on page load -->
+    <script>
+        document.getElementById('games-button').classList.add('active'); // Highlight Games button by default
+    </script>
+</body>
+</html>
+
