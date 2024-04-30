@@ -17,6 +17,9 @@
 
         body {
             font-family: 'Hammersmith One', Arial, sans-serif; /* Fallback to Arial if Hammersmith One is not available */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         /* Header styles */
@@ -90,6 +93,41 @@
         .tablink:hover {
             background-color: #0056b3;
         }
+
+        /* Content Sections */
+        .content {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer-links a:hover {
+            color: #ccc;
+        }
     </style>
 </head>
 <body>
@@ -118,7 +156,7 @@
     <!-- Content Sections -->
     <div class="content" id="games">
         <!-- Games content goes here -->
-        <h2 class="left-side-text">Explore Our Exiting Games Offering!!!</h2>
+        <h2 class="left-side-text">Explore Our Exciting Games Offering!!!</h2>
         <div class="movie-grid">
             <div class="movie">
                 <img src="Minions.jpg" alt="Minions">
@@ -145,29 +183,18 @@
 
     <div class="content" id="apps" style="display:none;">
         <!-- Apps content goes here -->
-        <h2 class="left-side-text">Apps To Keep You I The Know</h2>
-       <div class="movie-grid">
-        <div class="movie">
-            <img src="LBN.jpg" alt="Live By Night">
-            <figcaption class="movie-caption">
-                <h4 class="movie-title">Live By Night</h4>
-                <h4 class="rating">8.7 / 10 IMDb</h4>
-                <h4>Crime</h4>
-                <h4>Action</h4>
-                 <a href="https://www.example.com/minions" class="description-link">View Description</a>
-            </figcaption>
-        </div>
-         <div class="movie">
-            <img src="ferrari.jpg" alt="ferrari">
-            <figcaption class="movie-caption">
-                <h4 class="movie-title">Ferrari</h4>
-                <h4 class="rating">5.7 / 10 IMDb</h4>
-                <h4>Drama</h4>
-                <h4>Adventure</h4>
-                 <a href="https://www.example.com/minions" class="description-link">View Description</a>
-            </figcaption>
-        </div>
-        
+        <h2 class="left-side-text">Apps To Keep You In The Know</h2>
+        <div class="movie-grid">
+            <div class="movie">
+                <img src="ferrari.jpg" alt="Ferrari">
+                <figcaption class="movie-caption">
+                    <h4 class="movie-title">Ferrari</h4>
+                    <h4 class="rating">5.7 / 10 IMDb</h4>
+                    <h4>Drama</h4>
+                    <h4>Adventure</h4>
+                    <a href="https://www.example.com/ferrari" class="description-link">View Description</a>
+                </figcaption>
+            </div>
             <div class="movie">
                 <img src="Minions.jpg" alt="Minions">
                 <figcaption class="movie-caption">
@@ -178,21 +205,10 @@
                     <a href="https://www.example.com/minions" class="description-link">View Description</a>
                 </figcaption>
             </div>
-            <div class="movie">
-                <img src="LBN.jpg" alt="Live By Night">
-                <figcaption class="movie-caption">
-                    <h4 class="movie-title">Live By Night</h4>
-                    <h4 class="rating">8.7 / 10 IMDb</h4>
-                    <h4>Crime</h4>
-                    <h4>Action</h4>
-                    <a href="https://www.example.com/live-by-night" class="description-link">View Description</a>
-                </figcaption>
-            </div>
         </div>
     </div>
-    </div>
 
-     <!-- Footer Section--> 
+    <!-- Footer Section -->
     <footer>
         <div class="footer-links">
             <a href="/about/">About Us</a>
