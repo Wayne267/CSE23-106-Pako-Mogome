@@ -6,6 +6,12 @@
     <title>WarnerBros | Games and Apps</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
 
+    <style>
+        /* CSS styles for content sections */
+        .content {
+            display: none; /* Hide content sections by default */
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -23,68 +29,66 @@
 
     <!-- Navigation Links -->
     <nav>
-            <ul>
-                <li><a href="content.html">Movies</a></li>
-                <li><a href="movies.html">TV Shows</a></li>
-                <li><a href="GA.html">Games and Apps</a></li>
-                <li><a href="brands.html">Brands</a></li>
-                <li><a href="#"><span class="search-icon">Search</span></a></li>
-            </ul>
-        </nav>
+        <ul>
+            <li><a href="content.html">Movies</a></li>
+            <li><a href="movies.html">TV Shows</a></li>
+            <li><a href="GA.html">Games and Apps</a></li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="#"><span class="search-icon">Search</span></a></li>
+        </ul>
+    </nav>
 
     <!-- Content Sections -->
     <div class="content" id="games">
         <!-- Games content goes here -->
-        <div class="movie-grid">
-        <div class="movie">
-            <img src="Minions.jpg" alt="Minions">
-            <figcaption class="movie-caption">
-                <h4 class="movie-title">Minions</h4>
-                <h4 class="rating">6.2 / 10 IMDb</h4>
-                <h4>Drama</h4>
-                <h4>Adventure</h4>
-                 <a href="https://www.example.com/minions" class="description-link">View Description</a>
-            </figcaption>
-        </div>
-         <div class="movie">
-            <img src="LBN.jpg" alt="Live By Night">
-            <figcaption class="movie-caption">
-                <h4 class="movie-title">Live By Night</h4>
-                <h4 class="rating">8.7 / 10 IMDb</h4>
-                <h4>Crime</h4>
-                <h4>Action</h4>
-                 <a href="https://www.example.com/minions" class="description-link">View Description</a>
-            </figcaption>
-        </div>
-            </div>
         <h2>Games</h2>
         <p>Explore our exciting games collection!</p>
+    <div class="movie-grid">
+            <div class="movie">
+                <img src="Minions.jpg" alt="Minions">
+                <figcaption class="movie-caption">
+                    <h4 class="movie-title">Minions</h4>
+                    <h4 class="rating">6.2 / 10 IMDb</h4>
+                    <h4>Drama</h4>
+                    <h4>Adventure</h4>
+                    <a href="https://www.example.com/minions" class="description-link">View Description</a>
+                </figcaption>
+            </div>
+            <div class="movie">
+                <img src="LBN.jpg" alt="Live By Night">
+                <figcaption class="movie-caption">
+                    <h4 class="movie-title">Live By Night</h4>
+                    <h4 class="rating">8.7 / 10 IMDb</h4>
+                    <h4>Crime</h4>
+                    <h4>Action</h4>
+                    <a href="https://www.example.com/live-by-night" class="description-link">View Description</a>
+                </figcaption>
+            </div>
+        </div>
     </div>
 
-    <div class="content" id="apps" style="display:none;">
+    <div class="content" id="apps">
         <!-- Apps content goes here -->
         <h2>Apps</h2>
         <p>Discover our amazing apps!</p>
     </div>
 
-    <!-- Footer Section -->
-    <footer>
-        <!-- Footer content -->
-    </footer>
-
     <!-- JavaScript for toggling content -->
-    function showContent(contentType) {
-    // Hide all content sections
-    var contents = document.getElementsByClassName('content');
-    for (var i = 0; i < contents.length; i++) {
-        contents[i].style.display = 'none';
-    }
+    <script>
+        function showContent(contentType) {
+            // Hide all content sections
+            var contents = document.getElementsByClassName('content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
 
-    // Show the selected content section
-    var selectedContent = document.getElementById(contentType);
-    if (selectedContent) {
-        selectedContent.style.display = 'block';
-    }
-}
+            // Show the selected content section
+            var selectedContent = document.getElementById(contentType);
+            if (selectedContent) {
+                selectedContent.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
+
