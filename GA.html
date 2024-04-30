@@ -7,9 +7,88 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
 
     <style>
-        /* CSS styles for content sections */
-        .content {
-            display: none; /* Hide content sections by default */
+        /* Font styles */
+        @font-face {
+            font-family: 'Hammersmith One';
+            src: url('HammersmithOne-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Hammersmith One', Arial, sans-serif; /* Fallback to Arial if Hammersmith One is not available */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-right: 5px solid green; /* Add border to the right */
+        }
+
+        .logo img {
+            max-height: 50px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Hammersmith One', Arial, sans-serif; /* Use Hammersmith One font */
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        .search-icon {
+            width: 20px;
+            height: 20px;
+            background-image: url('search.svg');
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        /* Centered Buttons */
+        .centered-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .tablink {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .tablink:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -19,31 +98,27 @@
         <div class="logo">
             <img src="warnerbros_logo.png" alt="WarnerBros Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="content.html">Movies</a></li>
+                <li><a href="movies.html">TV Shows</a></li>
+                <li><a href="GA.html">Games and Apps</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="#"><span class="search-icon">Search</span></a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Centered Buttons -->
+    <!-- Centered Buttons for Games and Apps -->
     <div class="centered-buttons">
         <button class="tablink" onclick="showContent('games')">Games</button>
         <button class="tablink" onclick="showContent('apps')">Apps</button>
     </div>
 
-    <!-- Navigation Links -->
-    <nav>
-        <ul>
-            <li><a href="content.html">Movies</a></li>
-            <li><a href="movies.html">TV Shows</a></li>
-            <li><a href="GA.html">Games and Apps</a></li>
-            <li><a href="brands.html">Brands</a></li>
-            <li><a href="#"><span class="search-icon">Search</span></a></li>
-        </ul>
-    </nav>
-
     <!-- Content Sections -->
     <div class="content" id="games">
         <!-- Games content goes here -->
-        <h2>Games</h2>
-        <p>Explore our exciting games collection!</p>
-    <div class="movie-grid">
+        <div class="movie-grid">
             <div class="movie">
                 <img src="Minions.jpg" alt="Minions">
                 <figcaption class="movie-caption">
@@ -65,9 +140,11 @@
                 </figcaption>
             </div>
         </div>
+        <h2>Games</h2>
+        <p>Explore our exciting games collection!</p>
     </div>
 
-    <div class="content" id="apps">
+    <div class="content" id="apps" style="display:none;">
         <!-- Apps content goes here -->
         <h2>Apps</h2>
         <p>Discover our amazing apps!</p>
@@ -91,4 +168,5 @@
     </script>
 </body>
 </html>
+
 
