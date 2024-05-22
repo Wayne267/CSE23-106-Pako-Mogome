@@ -6,72 +6,65 @@
     <title>Minions - Movie Description</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .description-img {
-            width: 300px; /* Adjust the width as needed */
-            height: auto; /* Maintains aspect ratio */
-            margin-right: 20px; /* Space between image and text */
-        }
-        .movie-description {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-        }
-        .movie-details {
-            max-width: 600px; /* Ensures text doesn't stretch too far */
-        }
-        .trailer {
-            margin-top: 20px;
             width: 100%;
-        }
-        .trailer iframe {
-            width: 100%;
-            height: 315px;
+            height: auto;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="content.html">
-                <img src="images/Wlogo.png" alt="WarnerBros Logo">
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="content.html" class="navbar-brand">
+                <img src="images/Wlogo.png" alt="WarnerBros Logo" width="50">
             </a>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="content.html" class="nav-link text-white">Movies</a></li>
+                    <li class="nav-item"><a href="movies.html" class="nav-link text-white">TV Shows</a></li>
+                    <li class="nav-item"><a href="GA.html" class="nav-link text-white">Games and Apps</a></li>
+                    <li class="nav-item"><a href="brands.html" class="nav-link text-white">Brands</a></li>
+                    <li class="nav-item"><a href="feedback.html" class="nav-link text-white">Feedback</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="content.html">Movies</a></li>
-                <li><a href="movies.html">TV Shows</a></li>
-                <li><a href="GA.html">Games and Apps</a></li>
-                <li><a href="brands.html">Brands</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
+    <main class="container mt-5">
         <h2 class="left-side-text">Minions</h2>
-        <div class="movie-description">
-            <img src="images/Minions.jpg" alt="Minions" class="description-img">
-            <div class="movie-details">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/Minions.jpg" alt="Minions" class="img-fluid description-img">
+            </div>
+            <div class="col-md-8">
                 <h3 class="movie-title">Minions</h3>
                 <h4 class="rating">6.2 / 10 IMDb</h4>
                 <h4>Drama, Adventure</h4>
                 <p>The story of Universal Pictures and Illumination Entertainment’s Minions begins at the dawn of time. Starting as single-celled yellow organisms, Minions evolve through the ages, perpetually serving the most despicable of masters. Continuously unsuccessful at keeping these masters—from T. rex to Napoleon—the Minions find themselves without someone to serve and fall into a deep depression.</p>
             </div>
         </div>
-        <div class="trailer">
+        <div class="mt-4">
             <h3>Watch the Trailer</h3>
-            <iframe src="https://www.youtube.com/embed/eisKxhjBnZ0" title="Minions Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eisKxhjBnZ0" title="Minions Trailer" allowfullscreen></iframe>
+            </div>
         </div>
     </main>
 
-    <footer>
-        <div class="footer-links">
-            <a href="/about/">About Us</a>
-            <a href="/contact/">Contact Us</a>
-            <a href="/terms/">Terms of Service</a>
-            <a href="/privacy/">Privacy Policy</a>
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <a href="/about/" class="text-white mx-2">About Us</a>
+            <a href="/contact/" class="text-white mx-2">Contact Us</a>
+            <a href="/terms/" class="text-white mx-2">Terms of Service</a>
+            <a href="/privacy/" class="text-white mx-2">Privacy Policy</a>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
